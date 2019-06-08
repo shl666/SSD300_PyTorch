@@ -7,6 +7,8 @@ PASCAL VOC2012
 
 ### Train the Model
 
+Set the `download=True` for `train_dataset` and `val_dataset` for the first time training.
+  
 ```bash
 cd code
 python3 train_ssd.py
@@ -66,7 +68,7 @@ mAP Matrix:
  0.49702614 0.56876101 0.30975806 0.49377826 0.45675858 0.55071475
  0.60932779 0.60878767 0.41897762 0.21055238 0.47257278 0.39755191
  0.5924096  0.50312271]
- 
+
 mAP =  0.4822569492169384
 
 The mAP on validation set may not as high as it on training set. It may because we did not do data augmentation.
