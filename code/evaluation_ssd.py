@@ -334,7 +334,7 @@ SSD300_model = SSD300_model.to(device)
 adam = torch.optim.Adam(SSD300_model.parameters(), lr=lr)
 stats_manager = SSD300StatsManager()
 exp = nt.Experiment(SSD300_model, train_loader, val_loader, adam, stats_manager,\
-                  output_dir="../weight/demo", batch_size = batch_size,\
+                  output_dir="../weight/SSD300_exp", batch_size = batch_size,\
                   perform_validation_during_training=False)
 SSD300_model.eval()
 #############################################################
