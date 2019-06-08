@@ -1,5 +1,8 @@
 # SSD300 Model in PyTorch
 
+## Team 
+Shiming Luo, Jonathan Lam, Nathan Apolonio, Eric Megrabov
+
 ## Dataset
 PASCAL VOC2012
 
@@ -8,7 +11,7 @@ PASCAL VOC2012
 ### Train the Model
 
 Set the `download=True` for `train_dataset` and `val_dataset` for the first time training.
-  
+
 ```bash
 cd code
 python3 train_ssd.py
