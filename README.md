@@ -28,7 +28,7 @@ python3 demo.py
 ```
 The result images and ground truth images would be saved under directory called `img/`
 
-
+![demo](img/2008_007647_Prediction.png)
 
 ### Train the Model
 
