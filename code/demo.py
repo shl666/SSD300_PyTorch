@@ -77,7 +77,7 @@ exp = nt.Experiment(SSD300_model, [0], [0], adam, stats_manager,\
                     perform_validation_during_training=False)
 SSD300_model.eval()
 #############################################################
-print("Evaluating on {} ...".format(device))
+print("Giving demo on {} ...".format(device))
 #### change the 'img_path' to your own image
 img_path = "../img/2008_007647.jpg"
 img = Image.open(img_path).convert('RGB')
