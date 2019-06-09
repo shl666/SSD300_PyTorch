@@ -8,6 +8,12 @@ PASCAL VOC2012
 
 ## Usage
 
+We need to update torchvision to the latest version.
+
+```bash
+pip install --user --upgrade torch torchvision
+```
+
 ### Get a Demo
 
 Since the trained weigt is too big (300MB), please download it from the google drive: https://drive.google.com/drive/folders/1vGomCtIbWX_ah9_FE-ciN5P-wqLJeJ2M?usp=sharing
