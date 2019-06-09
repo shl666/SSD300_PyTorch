@@ -59,7 +59,7 @@ def plt_GroundTruth(img, label,idx, figsize=(5,5), linewidth=1.5):
                            bbox=dict(facecolor=colors[cls_id], alpha=0.5),
                            fontsize=12, color='white')
     plt.show()
-    plt.savefig("../img/{}_GroundTruth.png".format(idx))
+    fig.savefig("../img/{}_GroundTruth.png".format(idx))
 
 def plt_Predictions(img, label,idx, figsize=(5,5), linewidth=1.5):
     """Visualize bounding boxes. Largely inspired by SSD-MXNET!
@@ -89,7 +89,7 @@ def plt_Predictions(img, label,idx, figsize=(5,5), linewidth=1.5):
                            bbox=dict(facecolor=colors[cls_id], alpha=0.5),
                            fontsize=12, color='white')
     plt.show()  
-    plt.savefig("../img/{}_Prediction.png".format(idx)) 
+    fig.savefig("../img/{}_Prediction.png".format(idx))
     
 def plot(exp, fig, axes):
     with torch.no_grad():
