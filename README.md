@@ -8,6 +8,28 @@ PASCAL VOC2012
 
 ## Usage
 
+### Get a Demo
+
+Since the trained weigt is too big (300MB), please download it from the google drive: https://drive.google.com/drive/folders/1vGomCtIbWX_ah9_FE-ciN5P-wqLJeJ2M?usp=sharing
+and save the entire `demo` directory under folder `weight/` 
+
+#### Jupyter Notebook
+Open `code/demo.ipynb` and follow run the cells in it.
+
+If you wanna do predictions on your own images, please change the variable `img_path` in `code/demo.ipynb` to your own.
+
+
+#### On terminal
+If you wanna do predictions on your own images, please change the variable `img_path` in `code/demo.ipynb` to your own.
+
+```bash
+cd code
+python3 demo.py
+```
+The result images and ground truth images would be saved under directory called `img/`
+
+
+
 ### Train the Model
 
 Set the `download=True` for `train_dataset` and `val_dataset` for the first time training.
@@ -34,15 +56,6 @@ python3 evaluation_ssd.py
 
 tip: we need to train the model at least 1 epoch to save a trained weights and then evaluate the trained model.
 
-### Get a Demo
-
-```bash
-cd code
-python3 demo.py
-```
-The result images and ground truth images would be saved in directory called `img`
-
-tips: Since the trained weigt is not been uploaded (too big), this part would call some errors. You could look into the directory `img` directly to see the result demo produced by ourselves.
 
 ### Result
 
